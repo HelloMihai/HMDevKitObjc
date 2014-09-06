@@ -3,7 +3,8 @@
 collection of libraries for objc development
 
 add to cocoapod podfile ([how to](http://hellomihai.wordpress.com/2014/09/03/cocoapods-using-and-creating-your-own))
-		pod 'HMDevKitObjc'
+
+pod 'HMDevKitObjc'
 
 
 ### HMBasicAnimation
