@@ -2,6 +2,13 @@
 
 collection of libraries for objc development
 
+add to cocoapod podfile ([how to](http://hellomihai.wordpress.com/2014/09/03/cocoapods-using-and-creating-your-own))
+```objective-c
+
+  pod 'HMDevKitObjc'
+
+```
+
 ### HMBasicAnimation
 http://hellomihai.wordpress.com/2014/09/02/hmbasicanimation-utility/
 
