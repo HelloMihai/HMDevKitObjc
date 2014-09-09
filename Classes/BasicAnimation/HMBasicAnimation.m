@@ -72,13 +72,15 @@
 {
     // on delay set the value to the model (animating presentation layer wont update model)
     [HMGrandCentralDispatch delayCallbackOnMainQueueWithDelay:delaySeconds block:^{
-        id currentValue = [layer valueForKeyPath:keyPath];
-        CABasicAnimation* animation = [CABasicAnimation animationWithKeyPath:keyPath];
-        animation.fromValue = currentValue;
-        animation.toValue = toValue;
-        animation.duration = duration;
-        [self setEaseTypeToAniamtion:animation withEaseType:ease];
-        [layer addAnimation:animation forKey:keyPath]; // start animation
+        if (duration > 0) {
+            id currentValue = [layer valueForKeyPath:keyPath];
+            CABasicAnimation* animation = [CABasicAnimation animationWithKeyPath:keyPath];
+            animation.fromValue = currentValue;
+            animation.toValue = toValue;
+            animation.duration = duration;
+            [self setEaseTypeToAniamtion:animation withEaseType:ease];
+            [layer addAnimation:animation forKey:keyPath]; // start animation
+        }
         [layer setValue:toValue forKeyPath:keyPath];
     }];
 }
