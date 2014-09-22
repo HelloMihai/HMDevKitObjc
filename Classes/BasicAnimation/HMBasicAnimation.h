@@ -21,6 +21,8 @@ static NSString* const HMBasicAnimation_TRANSLATION_Y = @"transform.translation.
 static NSString* const HMBasicAnimation_TRANSLATION_Z = @"transform.translation.z"; // relative change from current z
 static NSString* const HMBasicAnimation_POSITION_X    = @"position.x"; // center is registration point
 static NSString* const HMBasicAnimation_POSITION_Y    = @"position.y"; // center is registration point
+static NSString* const HMBasicAnimation_HEIGHT        = @"bounds.size.height";
+static NSString* const HMBasicAnimation_WIDTH         = @"bounds.size.width";
 
 typedef enum {
     HMBasicAnimation_EASING_NONE, // no ease
